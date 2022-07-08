@@ -106,18 +106,8 @@ function init(){
             operandob = resultado.textContent;
             resolver();
         }
-    
-        function limpiar(){
-            resultado.textContent = "";
-        }
-        
-        function resetear(){
-            resultado.textContent = "";
-            operandoa = 0;
-            operandob = 0;
-            operacion = "";
-        }  
     }
+
     function resolver(){
         var res = 0;
         switch(operacion){
@@ -137,4 +127,16 @@ function init(){
         resetear();
         resultado.textContent = res;
     }
+
+    function limpiar(){
+        resultado.textContent = "";
+    }
+    
+    function resetear(){
+        resultado.textContent = "";
+        operandoa = 0;
+        operandob = 0;
+        operacion = "";
+    }  
+
   }
